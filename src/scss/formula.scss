@@ -1,24 +1,26 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
-.exel__formula {
+
+.excel__formula {
   position: absolute;
   left: 0;
   right: 0;
-  top: $toolbar-height + $header-height;
+  top: $header-height + $toolbar-height;
   height: $formula-height;
   display: flex;
   align-items: center;
   border-bottom: 1px solid $border-color;
 
-  & .info {
+  .info {
     font-size: 18px;
     font-style: italic;
     text-align: center;
     border-right: 1px solid $border-color;
     min-width: $info-cell-width;
   }
-  & .input {
+
+  .input {
     padding: 4px;
     font-size: 12px;
     outline: none;

@@ -1,7 +1,7 @@
-import { ExcelComponent } from '@core/ExcelComponent'
+import {ExcelComponent} from '@core/ExcelComponent'
 
 export class Formula extends ExcelComponent {
-  static className = 'exel__formula'
+  static className = 'excel__formula'
 
   constructor($root) {
     super($root, {
@@ -19,8 +19,10 @@ export class Formula extends ExcelComponent {
 
   onInput(event) {
     console.log(this.$root)
-    console.log('Formula: ', event.target.textContent.trim())
+    console.log('Formula: onInput', event.target.textContent.trim())
   }
 
-  onClick() {}
+  onClick() {
+    console.log('mk')
+  }
 }
